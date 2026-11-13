@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'OpenSans_Regular';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+      .clearfix { display: inline-block; }
+      /* start commented backslash hack \*/
+      * html .clearfix { height: 1%; }
+      .clearfix { display: block; }
+      /* close commented backslash hack */
+
+.site_nav {
+    background-color: #6C1C6D; 
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo_group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}  
+
+.nav_logo {
+width: 85px !important;
+    height: 85px !important;
+    border-radius: 50% !important; 
+    object-fit: cover;   
+    border: 2px solid #A8FFF9;
+}
+
+.site_nav h1 {
+    margin: 0;
+    font-size: 65px;
+    font-family: 'BebasNeue';
+    color: #FFFFFF;
+}
+
+.main_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_link {
+    font-family: 'BebasNeue';
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.nav_link:hover,
+.nav_link.active {
+    color: #A8FFF9; 
+}
+
+.official_dates_nav {
+float: right;
+display: inline;
+}
+
+.official_dates_nav h1 {
+    margin: 0;
+    font-size: 65px;
+    font-family: Bebas_Neue;
+    src: url(BebasNeue-Regular.ttf);
+    display: inline;
+}
+
+.official_dates_nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.official_dates_nav ul li {
+    display: inline;
+}
+.official_dates_nav ul li a {
+    text-decoration: none;
+    font-size: 45px;
+    font-family: 'OpenSans_Regular';
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'OpenSans_Regular';
+}
+
+.columns > .div1,
+.columns > .div2,
+.columns > .div3,
+.columns > .div4,
+.columns > .div5,
+.columns > .div6 {
+    float: auto;
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.main_footer {
+    background-color: #6C1C6D;
+    padding: 40px 5%;
+    color: rgb(255, 255, 255);
+    height: 20px;
+}
+
+.main_footer a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'OpenSans_Regular';
+}
+
+.footer_nav {
+    list-style: none;
+    float: right;
+}
+
+.footer_nav li {
+    float: left;
+}
+.footer_nav li + li {
+    margin-left:20px ;
+    list-style: none;
+}
+
+.social_media_nav {
+    float: right;
+}
+
+.anticipated.adaptation_header {
+    color: #6C1C6D;
+    background-color:#ffffff;
+    padding: 10px 5%;
+}
+
+.anticipated.adaptation_nav h1 {
+    margin: 0;
+    font-size: 65px;
+    font-family: 'BebasNeue', sans-serif;
+    display: inline;
+}
+
+.anticipated.adaptation_nav {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+
+    .anticipated.adaptation_nav ul li {
+        display: inline;
+    }
+    .anticipated.adaptation_nav ul li a {
+        text-decoration: none;
+        color:#6C1C6D;
+        font-size: 45px;
+        font-family: OpenSans_Regular;
+        src: url(OpenSans-Regular.ttf);
+    }
+
+.anticipated.adaptation_footer {
+    background-color: #6C1C6D;
+    padding: 40px 5%;
+    color: rgb(255, 255, 255);
+    height: 20px;
+}
+.anticipated.adaptation_footer a {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-decoration: none;
+    font-family: OpenSans_Regular;
+    src: url(OpenSans-Regular.ttf);
+}
+
+    .medias_nav {
+        display: inline;
+        }
+    .medias_nav ul {
+        padding: 10px;
+        margin: 0;
+        }
+    .medias_nav ul li {
+        display: inline;
+        }
+    .medias_nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 25px;    
+        font-family: OpenSans_Regular;
+        src: url(OpenSans-Regular.ttf);
+        
+ } 
