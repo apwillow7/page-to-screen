@@ -1,0 +1,21 @@
+{
+  "name": "Page to Screen Archive",
+  "short_name": "Page to Screen",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6C1C6D",
+  "icons": [
+    {
+      "src": "css/image/web_app_icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "css/image/web_app_icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
