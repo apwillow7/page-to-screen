@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'OpenSans_Regular';
-    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('Fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'OpenSans_SemiBold';
-    src: url('fonts/OpenSans-SemiBold.ttf') format('truetype');
+    src: url('Fonts/OpenSans-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: 'OpenSans-SemiBoldItalic';
-    src: url('fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    src: url('Fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: 'OpenSans_Bold';
-    src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+    src: url('Fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: 'BebasNeue';
-    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    src: url('Fonts/BebasNeue-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -715,6 +715,14 @@ a {
 }
 
 .instagram_icon {
+    width: 20px !important;
+    height: 20px !important;
+    padding-right:0;
+    margin:0px; 
+    display: flex;
+}
+
+.email_icon {
     width: 20px !important;
     height: 20px !important;
     padding-right:0;
@@ -1518,7 +1526,7 @@ form > .contact_form_group {
     }
 
     .home_page .site_nav h1 {
-        font-size: clamp(18px, 6vw, 30px);
+        font-size: clamp(20px, 6vw, 32px);
         white-space: nowrap;
     }
 
@@ -1690,7 +1698,7 @@ form > .contact_form_group {
     }
 
     .official_dates_page .site_nav h1 {
-        font-size: clamp(18px, 4.6vw, 26px);
+        font-size: clamp(20px, 6vw, 32px);
         white-space: nowrap;
     }
 
@@ -1942,7 +1950,7 @@ form > .contact_form_group {
     }
 
     .anticipated_page .site_nav h1 {
-        font-size: clamp(18px, 4.6vw, 26px);
+        font-size: clamp(20px, 6vw, 32px);
         white-space: nowrap;
     }
 
@@ -2617,5 +2625,165 @@ form > .contact_form_group {
     .archives_page .details_split_row {
         grid-template-columns: minmax(0, 1fr);
         gap: 8px;
+    }
+}
+
+@media (max-width: 850px) {
+    html.submission_document {
+        scroll-snap-type: y proximity;
+        scroll-padding-block: 12px;
+    }
+
+    .submission_page {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    .submission_page .site_nav {
+        gap: 6px;
+        padding: 10px 12px;
+    }
+
+    .submission_page .submission_page_title {
+        min-width: 0;
+        padding-left: 0 !important;
+        font-size: clamp(20px, 6vw, 32px);
+    }
+
+    .submission_page .menu_button {
+        flex: 0 0 auto;
+        padding: 8px;
+    }
+
+    .submission_page .main_nav_sidebar {
+        top: 0;
+        right: 0;
+        width: min(375px, 100%);
+        max-width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        box-sizing: border-box;
+        padding: 76px 24px 24px;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 999;
+    }
+
+    .submission_page .menu_checkbox:checked ~ .main_nav_sidebar {
+        transform: translateX(0);
+    }
+
+    .submission_page .close_button {
+        top: 12px;
+        right: 16px;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submission_page .form_page_wrapper {
+        width: 100%;
+        min-height: 0;
+        box-sizing: border-box;
+        align-items: flex-start;
+        padding: 32px 12px;
+    }
+
+    .submission_page .form_container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 24px 18px;
+    }
+
+    .submission_page .native_submission_form > .form_group,
+    .submission_page .native_submission_form > .form_row,
+    .submission_page .native_submission_form > .submit_btn {
+        scroll-snap-align: start;
+    }
+
+    .submission_page .form_row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .submission_page .form_group {
+        min-width: 0;
+    }
+
+    .submission_page .native_submission_form input,
+    .submission_page .native_submission_form select,
+    .submission_page .native_submission_form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .submission_page .site_footer {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 24px 16px;
+    }
+
+    .submission_page .footer_nav {
+        display: grid;
+        width: 100%;
+        box-sizing: border-box;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .submission_page .footer_nav li {
+        min-width: 0;
+    }
+
+    .submission_page .footer_nav li:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .submission_page .footer_nav li a {
+        display: flex;
+        width: 100%;
+        min-height: 48px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 12px;
+        border: 1px solid rgba(168, 255, 249, 0.28);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.09);
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    .submission_page .footer_nav li a:hover,
+    .submission_page .footer_nav li a:focus-visible {
+        background-color: rgba(255, 255, 255, 0.18);
+        color: #A8FFF9;
+    }
+
+    .submission_page .footer_nav li a:focus-visible {
+        outline: 2px solid #A8FFF9;
+        outline-offset: 2px;
+    }
+
+    .submission_page .social_media_nav {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        padding-top: 14px;
+        border-top: 1px solid rgba(168, 255, 249, 0.3);
+    }
+
+    .submission_page .site_nav,
+    .submission_page .site_footer {
+        scroll-snap-align: start;
     }
 }
