@@ -45,6 +45,15 @@
         <p class="form_subtitle">Have you heard that a book is being adapted for the screen and it isn't listed yet? Share the details below!</p>
     
         <form action="https://formspree.io/f/mgojkwdp" method="POST" class="native_submission_form">
+            
+            <div class="form_group">
+                <label for="submission_type">Submission Type<span class="required">*</span></label>
+                <select id="submission_type" name="submission_type" required>
+                    <option value="new-adaptation">New Submission</option>
+                    <option value="upcoming-adaptation">Entry Edit</option>
+                </select>
+            </div>
+            
             <div class="form_group">
                 <label for="book_title">Book / Source Title <span class="required">*</span></label>
                 <input type="text" id="book_title" name="book_title" placeholder="e.g., The Shining" required>
@@ -58,10 +67,10 @@
 
             <div class="form_row">
                 <div class="form_group">
-                    <label for="adaptation_type">Format<span class="required"> *</span></label>
+                    <label for="adaptation_type">Film or TV Series<span class="required"> *</span></label>
                     <select id="adaptation_type" name="adaptation_type">
                         <option value="movie">Film</option>
-                        <option value="tv-series">TV Series / Limited Series</option>
+                        <option value="tv-series">TV Series</option>
                     </select>
             </div>
 
