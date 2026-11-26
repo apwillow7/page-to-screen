@@ -397,7 +397,7 @@ a {
 
 .card_grid.date_cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
   align-items: start;
 }
@@ -410,16 +410,8 @@ a {
   border-radius: 8px; 
 }
 
-.card_grid.date_cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  flex-wrap: wrap; 
-}
-
 .ad_card {
-  flex: 1;
-  min-width: 250px; 
+  min-width: 0;
 }
 
 .ad_card_title {
@@ -464,7 +456,7 @@ a {
 
 .date_cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .trailer_cards {
@@ -1594,7 +1586,13 @@ form > .contact_form_group {
         overflow-wrap: anywhere;
     }
 
-    .home_page .card_grid.date_cards,
+    .home_page .card_grid.date_cards {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
     .home_page .card_grid.trailer_cards {
         display: grid;
         width: 100%;
